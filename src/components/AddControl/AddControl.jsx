@@ -7,6 +7,7 @@ import { useCreateProjectMutation } from '../../store/portfolio/portfolio.api';
 import { useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { trimmed } from '../../utils/trimmed';
 
 export default function AddControl({ show, onClose }) {
   const [createProject, { }] = useCreateProjectMutation()
@@ -33,7 +34,7 @@ export default function AddControl({ show, onClose }) {
     ev.preventDefault()
     /// Тут стоило написать хорошую валидаци, но сроки не позволили к сожалению(
  
-    if (formValues.title.length < 5 || formValues.type.length < 5 || formValues.description.length < 15 || formValues.stack.length < 15) {
+    if (trimmed(formValues.title).length < 5 || trimmed(formValues.type).length < 5 || trimmed(formValues.description).length < 15 || trimmed(formValues.stack).length < 3) {
       toast.error('Заполните все поля корректно!', {
         position: "bottom-right",
         autoClose: 5000,
@@ -71,22 +72,22 @@ export default function AddControl({ show, onClose }) {
         <form className={styles.addControl} onSubmit={saveProject}>
           <div className={styles.title}>Добавление проекта</div>
           <Input
-            placeholder="Название"
+            placeholder="Название (не менее 5 символов)"
             name="title"
             onChange={handleFormChange}
           />
           <Input
-            placeholder="Тип"
+            placeholder="Тип (не менее 5 символов)"
             name="type"
             onChange={handleFormChange}
           />
           <TextArea
-            placeholder="Описание"
+            placeholder="Описание (не менее 15 символов)"
             name="description"
             onChange={handleFormChange}
           />
           <TextArea
-            placeholder="Стэк использованных технологий"
+            placeholder="Стэк использованных технологий (не менее 3 символов)"
             name="stack"
             onChange={handleFormChange}
           />
