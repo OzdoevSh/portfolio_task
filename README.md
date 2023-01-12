@@ -7,7 +7,7 @@
 ### `npm install`
 Установка зависимостей
 
-### `npm run start: server`
+### `npm run start:server`
 Запуск JSON-Server (запустится на 4000 порту). Далее не закрывая терминал на котором запущен JSON-server, откройте другой
 
 ### `npm start`
