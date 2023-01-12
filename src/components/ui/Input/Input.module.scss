@@ -1,0 +1,23 @@
+.inputContainer{
+  width: 100%;
+  position: relative;
+  .customInput{
+    box-sizing: border-box;
+    width: 100%;
+    outline: none;
+    padding: 14px;
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-weight: 600;
+    border: 2px solid black;
+    border-radius: 8px;
+
+  }
+
+  .icon{
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    cursor: pointer;
+  }
+}

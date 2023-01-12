@@ -1,0 +1,55 @@
+.customButton{
+  box-sizing: border-box;
+  width: 100%;
+  padding: 14px;
+  font-family: 'Montserrat';
+  font-size: 18px;
+  font-weight: 600;
+  color: black;
+  cursor: pointer;
+  border: 2px solid black;
+  border-radius: 8px;
+  position: relative;
+  background: none;
+  transition: all 0.35s cubic-bezier(1.000, 0.000, 0.000, 1.000); 
+
+  &:hover{
+    color: white;
+  }
+
+  &:active{
+    font-weight: 500;
+  }
+}
+
+.customButtonColor {
+  border-color: black;
+  color: black;
+  
+  &::before,
+  &::after {
+    background: black;
+  }
+}
+
+.customButton::before,
+.customButton::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  transition: all 0.35s cubic-bezier(1.000, 0.000, 0.000, 1.000); 
+}
+
+.customButtonLr::after {
+  height: 100%;
+  width: 0;
+  top: 0;
+}
+ 
+.customButtonLr:hover::after {
+  width: 100.2%; 
+  border-radius: 6px;
+}
+.customButtonLr::after {
+  left: 0;
+}

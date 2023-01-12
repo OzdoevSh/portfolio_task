@@ -1,0 +1,28 @@
+.exp{
+  .companies{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    min-height: 340px; 
+
+    .company{
+      margin-bottom: 4px;
+      border-bottom: 2px solid black;
+      padding: 8px 0px;
+    }
+
+    .company:nth-child(1){
+      border-top: 2px solid black;
+    }
+  }
+}
+
+.pretitle{
+  font-weight: 600;
+}
+
+.date{
+  margin-top: 4px;
+  margin-bottom: 2px;
+  font-size: 12px;
+}

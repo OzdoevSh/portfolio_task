@@ -1,0 +1,27 @@
+.postList{
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 28px;
+
+  @media screen and (max-width: 1300px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media screen and (min-width: 2000px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  @media screen and (max-width: 700px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .pageTitle{
+    margin-top: 70px;
+  }
+}
+
+

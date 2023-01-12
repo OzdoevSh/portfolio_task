@@ -1,0 +1,91 @@
+.aboutPage{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .pageTitle{
+    @media screen and (max-width: 600px) {
+      margin-top: 70px;
+    }
+  }
+
+  .aboutPageContainer{
+    border: 2px solid black;
+    padding: 12px;
+    display: grid;
+    border-radius: 8px;
+    width: 60%;
+    grid-template-areas: "photo contacts degree"
+    "description description description"
+    "skills skills skills";
+    
+    @media screen and (max-width: 1300px) {
+      width: 90%;
+      grid-template-areas: "photo"
+      "contacts"
+      "degree"
+      "description"
+      "skills";
+    }
+
+    @media screen and (max-width: 600px) {
+      border: none;
+    }
+    
+  
+    .photo{
+      grid-area: photo;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      @media screen and (max-width: 600px) {
+        justify-content: flex-start;
+        margin-bottom: 4px;
+      }
+    }
+    .description{
+      grid-area: description;
+      width: 100%;
+     
+    }
+    .contacts{      
+      grid-area: contacts;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border-bottom: 2px solid black;
+
+      @media screen and (max-width: 1300px) {
+        border-bottom: none;
+      }
+
+      @media screen and (max-width: 600px) {
+        margin-bottom: 4px;
+      }
+
+      .name{
+        font-weight: 600;
+        font-size: 18px;
+      }
+    
+    }
+    .degree{
+      grid-area: degree;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border-bottom: 2px solid black;
+
+      @media screen and (max-width: 1300px) {
+        border-bottom: none;
+      }
+     
+    }
+    .skills{
+      grid-area: skills;
+    }
+    
+  }
+}
+

@@ -1,0 +1,15 @@
+.degree{
+  display: flex;
+  flex-direction: column;
+
+  .university{
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  div {
+    .preTitle{
+      font-weight: 600;
+    }
+  }
+}

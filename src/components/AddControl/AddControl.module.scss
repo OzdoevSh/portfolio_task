@@ -1,0 +1,15 @@
+.addControl{
+  width: 80vw;
+  height: 60vh;
+  display: flex;
+  gap: 14px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  .title{
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+  }
+}

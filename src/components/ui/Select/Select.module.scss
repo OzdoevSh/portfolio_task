@@ -1,0 +1,48 @@
+.select {
+  padding: 14px;
+  padding-right: 40px;
+  font-family: 'Montserrat';
+  font-size: 18px;
+  font-weight: 600;
+  border: 2px solid black;
+  border-radius: 8px;
+  background: white;
+  position: relative;
+  cursor: pointer;
+  min-width: 245px;
+
+  .title {
+    font-weight: 600;
+  }
+
+  .selectIcon {
+    width: 18px;
+    position: absolute;
+    top: 18px;
+    right: 8px;
+  }
+
+  .listContainer {}
+
+  .list {
+    padding: 0;
+    margin: 0;
+    background: #ffffff;
+    box-sizing: border-box;
+    font-weight: 500;
+
+    &:first-child {
+      padding-top: 0.8em;
+    }
+
+    .listItem {
+      list-style: none;
+      margin-bottom: 0.8em;
+      cursor: pointer;
+
+      &:hover {
+        font-weight: 600;
+      }
+    }
+  }
+}

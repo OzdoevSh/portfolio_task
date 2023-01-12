@@ -1,0 +1,39 @@
+.overlay{
+  visibility: hidden;
+  opacity: 0.5;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  .popup{
+    padding: 60px;
+    border-radius: 15px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background: black;
+    border: 4px double white ;
+
+    .close{
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      cursor: pointer;
+    }
+
+    @media screen and (max-width: 600px) {
+      width: 60%;
+    }
+  }
+}
