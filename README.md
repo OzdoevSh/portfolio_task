@@ -1,6 +1,6 @@
 # Тестовое задание
 
-Проект собран с помощью Create React App [Create React App](https://github.com/facebook/create-react-app).
+Проект собран с помощью [Create React App](https://github.com/facebook/create-react-app).
 
 ## Инструкция по запуску проекта
 
